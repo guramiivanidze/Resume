@@ -19,11 +19,11 @@ class AuthCheck
 
 
 
-        if (!session()->has('LoggedUser') && ($request->path() != 'auth/login' && $request->path() != 'auth/register')) {
+        if (!session()->has('LoggedUser') && ($request->path() != 'auth/login')) {
             return redirect('auth/login')->with('fail', 'you must be logged in');
         }
 
-        if (session()->has('LoggedUser') && ($request->path() == 'auth/login' || $request->path() == 'auth/register')) {
+        if (session()->has('LoggedUser') && ($request->path() == 'auth/login' )) {
             return back();
         }
 

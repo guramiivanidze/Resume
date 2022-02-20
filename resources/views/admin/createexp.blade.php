@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Dashboard </title>
+    <title>add experiance </title>
 </head>
 
 <body>
@@ -18,28 +18,37 @@
 <?php echo view('admin.menu') ?>
 
 
-<div id="table" style="padding: 60px">
-    <h1 style="padding-left: 50%">Dashboard</h1>
-    <table class="table table-dark">
-        <thead>
-        <tr>
-            <th scope="col">name</th>
-            <th scope="col">email</th>
-            <th scope="col">action</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th>{{ $LoggedUserInfo['name'] }}</th>
-            <th>{{ $LoggedUserInfo['email'] }}</th>
-            <th>
-                <a href="{{ route('auth.logout') }}">logout</a>
-            </th>
+<div id="form" style="padding: 60px">
 
-        </tr>
+    <form action="{{ route('auth.save') }}" method="post">
 
-        </tbody>
-    </table>
+        @csrf
+        <h1>Register</h1>
+        <div class="form-group">
+            <label for="exampleInputEmail1">title</label>
+            <input type="text" class="form-control" placeholder="Enter name" name="title"
+                   value="{{ old('title') }}">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">teaser date</label>
+            <input type="email" class="form-control" placeholder="Enter email" name="teaser_date"
+                   value="{{ old('teaser_date') }}">
+
+        </div>
+        <div class="form-group">
+            <label >teaser</label>
+            <textarea type="text" class="form-control" placeholder="enter teaser" name="teaser" value="{{old('teaser')}}"></textarea>
+
+        </div>
+
+        <div class="form-group">
+            <label >description</label>
+            <textarea type="text" class="form-control" placeholder="enter description" name="description" value="{{old('description')}}"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
 </div>
 
 

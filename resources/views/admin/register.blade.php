@@ -9,11 +9,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
     <title>register </title>
 </head>
 
 <body>
+
+<?php echo view('admin.menu') ?>
+
+
 
 
     <div id="form">
@@ -58,7 +62,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="{{ route('auth.login') }}">login</a>
+
         </form>
     </div>
 

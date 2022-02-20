@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f56beb83-8b91-4df7-be3a-06cb7380f077" name="Default Changelist" comment="" />
+    <list default="true" id="f56beb83-8b91-4df7-be3a-06cb7380f077" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/createexp.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/experiance.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AuthCheck.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AuthCheck.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/administrators.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/administrators.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +48,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -144,11 +178,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gurami\Documents\guramiworks\Resume\resources\views\admin" />
+      <recent name="C:\Users\Gurami\Documents\guramiworks\Resume\app\Http\Controllers\admin" />
       <recent name="C:\Users\Gurami\Documents\learnn\app\Http\Controllers\admin" />
       <recent name="C:\Users\Gurami\Documents\learnn\app\Http\Controllers" />
     </key>
@@ -170,26 +206,50 @@
       <workItem from="1645102303930" duration="783000" />
       <workItem from="1645103133298" duration="4070000" />
       <workItem from="1645107940690" duration="494000" />
+      <workItem from="1645213294335" duration="638000" />
+      <workItem from="1645213971189" duration="4243000" />
+      <workItem from="1645253540391" duration="14328000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="715" y="402" key="#Notifications" timestamp="1645108174379">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="715" y="402" key="#Notifications/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1645108174379" />
+    <state x="727" y="359" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1645279798645">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="359" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1645279798645" />
     <state x="2714" y="503" key="NewPhpFileDialog" timestamp="1645104679363">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2714" y="503" key="NewPhpFileDialog/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1645104679363" />
-    <state x="872" y="117" key="SettingsEditor" timestamp="1645108132537">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="872" y="105" key="SettingsEditor" timestamp="1645215546087">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="872" y="105" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1645215546087" />
     <state x="872" y="117" key="SettingsEditor/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1645108132537" />
     <state x="2381" y="225" key="SettingsEditor/0.0.1920.1160/1920.0.1920.1160@1920.0.1920.1160" timestamp="1645103418457" />
+    <state x="624" y="117" width="585" height="801" key="find.popup" timestamp="1645279267089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="624" y="117" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1645279267089" />
     <state x="616" y="270" key="run.anything.popup" timestamp="1645104991768">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

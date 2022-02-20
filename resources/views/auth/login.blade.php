@@ -47,7 +47,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="{{ route('auth.register') }}">register</a>
+
         </form>
     </div>
 

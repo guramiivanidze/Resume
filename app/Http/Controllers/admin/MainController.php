@@ -18,7 +18,7 @@ class MainController extends Controller
 
     public function register()
     {
-        return view('auth.register');
+        return view('admin.register');
     }
 
     public function save(Request $request)
@@ -36,7 +36,7 @@ class MainController extends Controller
         $save = $admin->save();
 
         if ($save) {
-            return back()->with('success', 'you are registered ');
+            return redirect('admin/administrators')->with('successadd', 'administrator Successfully added');
         } else {
             return back()->with('fail', 'Something wrong');
         }
@@ -89,5 +89,13 @@ class MainController extends Controller
         return view('admin.administrators',['administrators'=>$administrators]);
     }
 
+
+    public function deleteadministrator ($id){
+
+        $deleted = DB::table('admins')->where('id', '=', $id)->delete();
+        if ($deleted){
+            return redirect('admin/administrators')->with('successdel', "administrator  deleted successesfully");
+        }
+    }
 
 }

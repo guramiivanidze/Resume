@@ -20,47 +20,44 @@
 
 <div style="padding: 60px">
 
-    @if (\Session::has('successadd'))
+    @if (\Session::has('successaddexp'))
         <div class="alert alert-success">
-            <h4>{{ \Session::get('successadd') }}</h4>
+            <h4>{{ \Session::get('successaddexp') }}</h4>
         </div>
 
-    @elseif (\Session::has('successdel'))
+    @elseif (\Session::has('successdelexp'))
         <div class="alert alert-success">
-            <h4>{{ \Session::get('successdel') }}</h4>
+            <h4>{{ \Session::get('successdelexp') }}</h4>
         </div>
     @endif
 
     <h1>Administrators</h1>
     <div style="padding-bottom: 5px">
-        <a type="submit" href="{{ route('admin.register') }}" class="btn btn-primary">add administrators</a>
+        <a type="submit" href="createexp" class="btn btn-primary">add experiance</a>
     </div>
     <table class="table table-dark">
         <thead>
         <tr>
             <th scope="col">ID</th>
-            <th scope="col">name</th>
-            <th scope="col">email</th>
-            <th scope="col">password</th>
+            <th scope="col">title</th>
+            <th scope="col">teaser data</th>
+            <th scope="col">teaser</th>
+            <th scope="col">description</th>
             <th scope="col">action</th>
         </tr>
         </thead>
         <tbody>
 
 
-        <?php foreach ($administrators as $administrator): ?>
+        <?php foreach ($experiance as $exp): ?>
         <tr>
-            <th scope="row"><?php echo $administrator->id; ?></th>
-            <td><?php echo $administrator->name; ?></td>
-            <td><?php echo $administrator->email; ?></td>
+            <th scope="row"><?php echo $exp->id; ?></th>
+            <td><?php echo $exp->title; ?></td>
+            <td><?php echo $exp->teaser_date; ?></td>
+            <td><?php echo $exp->teaser; ?></td>
+            <td><?php echo $exp->description; ?></td>
             <td>
-
-                <?php echo $administrator->password; ?></td>
-
-
-            <td>
-
-                <a href="/admin/deleteadministrator/{{$administrator->id}}" class="btn btn-danger">delete</a>
+                <a href="deleteexp/{{$exp->id}}" class="btn btn-danger">delete</a>
             </td>
         </tr>
         <?php endforeach; ?>
