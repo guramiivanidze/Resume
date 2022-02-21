@@ -66,7 +66,7 @@
 <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
         <h1>Brandon Johnson</h1>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Designer, Developer1, Freelancer2, Photographer3"></span></p>
         <div class="social-links">
             <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
             <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -293,6 +293,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
+
                     <h3 class="resume-title">Sumary</h3>
 
                     <?php foreach ($experiances as $experiance): ?>

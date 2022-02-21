@@ -4,9 +4,11 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin;
+use App\Models\profile;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 
 
 class MainController extends Controller
@@ -80,7 +82,8 @@ class MainController extends Controller
     public function dashboard()
     {
         $data = ['LoggedUserInfo' => Admin::where('id', '=', session('LoggedUser'))->first()];
-        return view('admin.dashboard', $data);
+        $table = DB::select('DESCRIBE profile');
+        return view('admin.dashboard', $data, ['table'=>$table]);
     }
 
     public function administrators() {

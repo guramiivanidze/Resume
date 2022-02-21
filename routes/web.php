@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\admin\MainController;
 use App\Http\Controllers\admin\contentController;
-use App\Models\Admin;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +33,38 @@ Route::group(['middleware' => ['AuthCheck']], function () {
     Route::get('/admin/deleteexp/{id}', [contentController::class, 'deleteexp']);
     Route::get('/admin/createexppage', [contentController::class, 'createexppage'])->name('admin.createexppage');
     Route::post('/admin/saveexp', [contentController::class, 'saveexp'])->name('admin.saveexp');
+
+//    Route::get('/admin/test', function () {
+//        $table = DB::select('DESCRIBE profile');
+////        dd($table);
+//
+//        $people = array(
+//
+//            array("name" => "Jennifer Kimbers",
+//                "email" => "abc@gmail.com",
+//                "city" => "Seattle",
+//                "state" => "Washington"),
+//
+//            array("name" => "Rodney Hutchers",
+//                "email" => "def@gmail.com",
+//                "city" => "Los Angeles",
+//                "state" => "California"),
+//
+//            array("name" => "Robert Smith",
+//                "email" =>  "ghi@gmail.com",
+//                "city" => "Michigan",
+//                "state" => "Missouri")
+//        );
+//
+//
+//        foreach ($table as $item){
+//            $colums = $item->Field;
+//            echo $colums;
+//        }
+////        echo '<pre>';
+////        var_dump($table[0]->Field);
+////        echo '<pre>';
+//    });
 
 
     Route::get('/admin/dashboard', [MainController::class, 'dashboard']);
