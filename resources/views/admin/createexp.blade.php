@@ -20,10 +20,10 @@
 
 <div id="form" style="padding: 60px">
 
-    <form action="{{ route('auth.save') }}" method="post">
+    <form action="{{route('admin.saveexp')}}" method="post">
 
         @csrf
-        <h1>Register</h1>
+        <h1>add experiance1</h1>
         <div class="form-group">
             <label for="exampleInputEmail1">title</label>
             <input type="text" class="form-control" placeholder="Enter name" name="title"
@@ -31,7 +31,7 @@
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1">teaser date</label>
-            <input type="email" class="form-control" placeholder="Enter email" name="teaser_date"
+            <input type="text" class="form-control" placeholder="Enter email" name="teaser_date"
                    value="{{ old('teaser_date') }}">
 
         </div>
@@ -44,6 +44,34 @@
         <div class="form-group">
             <label >description</label>
             <textarea type="text" class="form-control" placeholder="enter description" name="description" value="{{old('description')}}"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <label >type - must be sumary/education/experiance</label>
+            <textarea type="text" class="form-control" placeholder="enter type" name="type" value="{{old('type')}}"></textarea>
+        </div>
+
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class='col-sm-6'>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+               <span class="glyphicon glyphicon-calendar"></span>
+               </span>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker1').datetimepicker();
+                        });
+                    </script>
+                </div>
+            </div>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>

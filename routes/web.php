@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\front\MainController::class, 'exps']);
 
 
 Route::post('/auth/save', [MainController::class, 'save'])->name('auth.save');
@@ -34,7 +32,8 @@ Route::group(['middleware' => ['AuthCheck']], function () {
     Route::get('/admin/deleteadministrator/{id}', [MainController::class, 'deleteadministrator']);
     Route::get('/admin/experiance', [contentController::class, 'experiancelist']);
     Route::get('/admin/deleteexp/{id}', [contentController::class, 'deleteexp']);
-    Route::get('/admin/createexppage', [contentController::class, 'createexppage']);
+    Route::get('/admin/createexppage', [contentController::class, 'createexppage'])->name('admin.createexppage');
+    Route::post('/admin/saveexp', [contentController::class, 'saveexp'])->name('admin.saveexp');
 
 
     Route::get('/admin/dashboard', [MainController::class, 'dashboard']);

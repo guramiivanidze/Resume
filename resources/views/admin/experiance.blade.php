@@ -33,7 +33,7 @@
 
     <h1>Administrators</h1>
     <div style="padding-bottom: 5px">
-        <a type="submit" href="createexp" class="btn btn-primary">add experiance</a>
+        <a type="submit" href="createexppage" class="btn btn-primary">add experiance</a>
     </div>
     <table class="table table-dark">
         <thead>
@@ -43,6 +43,7 @@
             <th scope="col">teaser data</th>
             <th scope="col">teaser</th>
             <th scope="col">description</th>
+            <th scope="col">created date</th>
             <th scope="col">action</th>
         </tr>
         </thead>
@@ -56,6 +57,7 @@
             <td><?php echo $exp->teaser_date; ?></td>
             <td><?php echo $exp->teaser; ?></td>
             <td><?php echo $exp->description; ?></td>
+            <td><?php echo $exp->created_at; ?></td>
             <td>
                 <a href="deleteexp/{{$exp->id}}" class="btn btn-danger">delete</a>
             </td>

@@ -27,8 +27,8 @@ class contentController extends Controller
     }
 
     public function createexppage (){
-        dd(11111);
-        return view('createexp');
+
+        return view('admin.createexp');
 
     }
 
@@ -36,6 +36,7 @@ class contentController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'type' => 'required',
 //            'email' => 'required|email|unique:Admins',
 //            'password' => 'required|min:8|max:20',
         ]);
@@ -45,15 +46,14 @@ class contentController extends Controller
         $expe->teaser_date = $request->teaser_date;
         $expe->teaser = $request->teaser;
         $expe->description = $request->description;
+        $expe->type = $request->type;
         $save = $expe->save();
 
-
-        // aq damrcha gasaketeli dasabmiteba
 
 
 
         if ($save) {
-            return redirect('admin/administrators')->with('successadd', 'administrator Successfully added');
+            return redirect('admin/experiance')->with('successaddexp', 'administrator Successfully added');
         } else {
             return back()->with('fail', 'Something wrong');
         }
